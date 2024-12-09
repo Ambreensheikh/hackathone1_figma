@@ -1,5 +1,6 @@
 import React from 'react'
 import { Cards } from '../app/constant/Card';
+import Image from 'next/image'
 
 
 
@@ -14,7 +15,7 @@ const cardName = () =>{
 
   
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6  p-4">
-      {Cards.map((card: any, index: number) => {
+      {Cards.map((card, index: number) => {
         
       return(
         
@@ -24,7 +25,7 @@ const cardName = () =>{
           className="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center 
           text-center w-[270px] h-[320px] mt-3 mb-[45px]"
         >
-          <img
+          <Image
             src={card.src}
             alt={card.name}
             width={card.width}

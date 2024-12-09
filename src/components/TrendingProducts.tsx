@@ -17,7 +17,7 @@ return(
       className="bg-white p-4 flex shadow-lg items-center 
       text-center flex-col mb-[20px] "
     >
-      <img
+      <Image
         src={trendingCards.src}
         alt={trendingCards.name}
         width={trendingCards.width}
